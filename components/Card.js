@@ -1,7 +1,7 @@
 import moment from "moment";
 import Link from "next/link";
 
-export default function Card({ title, author, coverPhoto, datePublished, slug }) {
+export default function Card({ title, coverPhoto, datePublished, slug }) {
     return (
         <Link href={`/posts/${slug}`} className="flex">
             <div className='flex mx-auto my-auto pb-10 font-bold flex-col p-10'>

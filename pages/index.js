@@ -5,9 +5,7 @@ import Card from "../components/Card.js";
 import Navbar from "../components/Navbar";
 
 const key = process.env.NEXT_PUBLIC_API_URL
-
 const graphcms = new GraphQLClient(key);
-
 const QUERY = gql`
   {
     posts {
@@ -59,7 +57,6 @@ export default function Home({ posts }) {
         {posts.map((post) => (
           <Card
             title={post.title}
-            author={post.author}
             coverPhoto={post.coverPhoto}
             key={post.id}
             datePublished={post.datePublished}
