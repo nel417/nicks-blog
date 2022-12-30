@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
-import Card from "./components/Card.js";
-import Navbar from "./components/Navbar";
+import Card from "../components/Card.js";
+import Navbar from "../components/Navbar";
 
 const key = process.env.NEXT_PUBLIC_API_URL
 

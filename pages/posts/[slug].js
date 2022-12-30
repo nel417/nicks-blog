@@ -1,5 +1,5 @@
 import { GraphQLClient, gql } from "graphql-request";
-import Navbar from '../components/Navbar'
+import Navbar from '../../components/Navbar'
 
 
 const key = process.env.NEXT_PUBLIC_API_URL
